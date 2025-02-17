@@ -1,0 +1,107 @@
+/* start variables */
+:root {
+  --main-color: #4a769a;
+  --secondary-color: #f7f9fa;
+  --main-transition: .2s;
+  --main-section-margin-top: 100px;
+}
+/* end variables */
+/* body {
+  position: relative;
+  height: 100vh;
+} */
+
+header .container {
+  grid-template-columns: auto;
+}
+header .container :not(img) {
+  display: none;
+}
+header .container img {
+  margin: auto;
+}
+
+main form {
+  margin: 50px auto 50px auto;
+  padding: 30px;
+  /* width: 600px; */
+  width: fit-content;
+  box-shadow: 0 1px 15px -7px;
+  border-radius: 25px;
+  
+}
+@media only screen and (max-width: 500px) {
+  main form {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+main form h2 {
+  margin: auto;
+  width: fit-content;
+  color: var(--main-color);
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+main form div.input-container {
+  margin-bottom: 20px;
+}
+main form div label {
+  margin-bottom: 10px;
+  display: block;
+}
+main form div input {
+  border-radius: 15px;
+  height: 45.6px;
+  width: 400px;
+  padding-left: 20px;
+  border: 1px solid var(--main-color);
+  max-width: 100%;
+}
+main form input[type="submit"]  {
+  width: 400px;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: var(--main-color);
+  padding: 15px;
+  transition: 0.2s;
+  border: 1px solid var(--main-color);
+}
+main form input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+main form > a {
+  margin: 20px 0 20px;
+}
+main form a {
+  /* display: block; */
+  text-decoration: none;
+  color: black;
+}
+main form a:hover {
+  text-decoration: underline;
+}
+main form div > a {
+  display: inline;
+  font-weight: bold;
+  color: var(--main-color);
+}
+main form div.do-not-have-an-account {
+  margin: 20px 0;
+}
+main form div:last-child ul{
+  display: inline-flex;
+}
+main form div:last-child ul li{
+  font-weight: bold;
+}
+
+

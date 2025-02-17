@@ -1,0 +1,81 @@
+/* start variables */
+:root {
+  --main-color: #4a769a;
+  --secondary-color: #f7f9fa;
+  --main-transition: .2s;
+  --main-section-margin-top: 100px;
+}
+/* end variables */
+
+main .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 20px 0;
+}
+.cards-container .card {
+  margin-right: 0;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 991.9px) {
+  main .cards-container {
+    justify-content: space-evenly;
+  }
+}
+main .filter-courses {
+  margin-top: 50px;
+}
+main .filter-courses .filter-courses-moving-container {
+  overflow: auto;
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  padding: 0 20px;
+}
+/* main .filter-courses .filter-courses-moving-container i.fa-caret-right {
+  position: absolute;
+  right: -27px;
+  font-size: 40px;
+  color: white;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+main .filter-courses ul {
+  display: flex;
+}
+main .filter-courses select {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 18px;
+  width: 160px;
+  display: none;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 767.9px) {
+  main .filter-courses ul {
+    display: none;
+  }
+  main .filter-courses select {
+    display: block;
+  }
+}
+main .filter-courses ul li {
+  width: fit-content;
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  transition: var(--main-transition);
+  white-space: nowrap;
+}
+main .filter-courses ul li:hover {
+  background-color: black;
+}
+main .filter-courses ul li.selected {
+  background-color: black;
+}
